@@ -1,0 +1,4 @@
+import(glmnet)
+importFrom("stats", "predict", "sd")
+export(glmTLP)
+export(cv.glmTLP)

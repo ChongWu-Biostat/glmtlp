@@ -1,0 +1,10 @@
+Package: glmtlp
+Type: Package
+Title: Truncated Lasso Regularized Generalized Linear Models
+Version: 1.0
+Date: 2016-12-08
+Author: Chong Wu and Wei Pan
+Maintainer: Chong Wu <wuxx0845@umn.edu>
+Description: Extremely efficient procedures for fitting the entire truncated lasso regularization path for linear regression, logistic and multinomial regression models, Poisson regression and the Cox model. The algorithm uses difference of convex technique. The package is inherited from a popular R package glmnet.
+License: GPL-2
+Depends: R (>= 3.1.1), glmnet
