@@ -11,8 +11,8 @@ Truncated lasso model paths for some generalized linear models
 \tabular{ll}{
 Package: \tab glmtlp\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2016-12-07\cr
+Version: \tab 1.1\cr
+Date: \tab 2018-02-01\cr
 License: \tab GPL-2 \cr
 }
 Very simple to use. Accepts \code{x,y} data for regression models, and

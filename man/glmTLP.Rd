@@ -5,10 +5,11 @@
 }
 \usage{
 glmTLP(x, y, family=c("gaussian","binomial","poisson","multinomial","cox","mgaussian"),
-    weights, offset=NULL, lambda, tau = 0.3, nlambda=100,penalty.factor = rep(1, nvars), 
-    lambda.min.ratio=ifelse(nobs<nvars,1e-3,1e-4),
+    weights, offset=NULL, lambda, tau = 0.3, nlambda=100,
+    penalty.factor = rep(1, nvars), lambda.min.ratio=ifelse(nobs<nvars,1e-3,1e-4),
     standardize=TRUE,intercept=TRUE,dfmax=nvars+1,pmax=min(dfmax*2+20,nvars),
-    lower.limits=-Inf,upper.limits=Inf,standardize.response=FALSE, maxIter=100, Tol=1e-4)
+    lower.limits=-Inf,upper.limits=Inf,
+    standardize.response=FALSE, maxIter=100, Tol=1e-4)
 }
 
 \arguments{
@@ -113,6 +114,13 @@ An object that inherits from \code{glmnet}.
   \item{offset}{a logical variable indicating whether an offset was included in the model}
   \item{jerr}{error flag, for warnings and errors (largely for internal debugging).}
 }
+
+
+\examples{
+	data("QuickStartExample")
+	fit = glmTLP(x,y)
+}
+
 \references{ Xiaotong Shen , Wei Pan and Yunzhang Zhu (2012)
   \emph{Likelihood-Based Selection and Sharp Parameter Estimation}, 
   \emph{Journal of the American Statistical Association, 107:497, 223-232}}

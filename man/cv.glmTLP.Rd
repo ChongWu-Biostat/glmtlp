@@ -5,9 +5,11 @@
 \usage{
 cv.glmTLP(x, y, family=c("gaussian","binomial","poisson","multinomial","cox","mgaussian"),
 nfolds = 10, weights, offset=NULL, lambda, tau = 0.3, 
-nlambda=100, penalty.factor = rep(1, nvars),  lambda.min.ratio=ifelse(nobs<nvars,1e-3,1e-4),
-standardize=TRUE,intercept=TRUE,dfmax=nvars+1,pmax=min(dfmax*2+20,nvars),
-lower.limits=-Inf,upper.limits=Inf,standardize.response=FALSE, maxIter=100, Tol=1e-4)
+nlambda=100, penalty.factor = rep(1, nvars), 
+ lambda.min.ratio=ifelse(nobs<nvars,1e-3,1e-4),
+standardize=TRUE,intercept=TRUE,dfmax=nvars+1,
+pmax=min(dfmax*2+20,nvars), lower.limits=-Inf,upper.limits=Inf,
+standardize.response=FALSE, maxIter=100, Tol=1e-4)
 }
 \arguments{
   \item{x}{\code{x} matrix as in \code{glmnet}.}
@@ -107,6 +109,12 @@ lower.limits=-Inf,upper.limits=Inf,standardize.response=FALSE, maxIter=100, Tol=
     subsequent values of \code{lambda} are not reached for that fold}
   \item{foldid}{if \code{keep=TRUE}, the fold assignments used}
 }
+
+\examples{
+	data("QuickStartExample")
+	fit = cv.glmTLP(x,y,tau = 1)
+}
+
 \references{ Xiaotong Shen , Wei Pan and Yunzhang Zhu (2012)
   \emph{Likelihood-Based Selection and Sharp Parameter Estimation}, 
   \emph{Journal of the American Statistical Association, 107:497, 223-232}

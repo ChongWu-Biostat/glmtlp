@@ -18,5 +18,5 @@ This is undergoing project. Let me know if you find any bugs. I would greatly ap
 
 You can learn more about this package through the following link:
 
-[http://www.tc.umn.edu/~wuxx0845/glmtlp](http://www.tc.umn.edu/~wuxx0845/glmtlp)
+[http://wuchong.org/glmtlp](http://wuchong.org/glmtlp)
 
